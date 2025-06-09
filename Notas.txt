@@ -1,0 +1,14 @@
+AULA01
+
+# Esse sinal utilizado como comentário em Python
+
+"""
+Já assim é para comentar em bloco
+utilizado para estudo do código posteriormente
+
+"""
+
+AULA02
+Função print 
+utilizada para imprimir algo na tela
+
