@@ -6,14 +6,20 @@ id = identidade
 
 """
 
-v1 = 'a'
-v2 = 'a'
-print(id(v1))
-print(id(v2))
+# v1 = 'a'
+# v2 = 'a'
+# print(id(v1))
+# print(id(v2))
 
-# condição = False
+condicao = True
+passou_no_if = None
 
-# if condicao:
-#   print('Faça algo')
-# else:
-#   print('Não faça algo')
+
+if condicao:
+  passou_no_if = True # Bandeira no código
+  print('Faça algo')
+else:
+  print('Não faça algo')
+
+print(passou_no_if, passou_no_if is None) # é None?
+print(passou_no_if, passou_no_if is not None) # Não é None?
