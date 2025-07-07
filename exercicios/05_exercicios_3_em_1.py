@@ -3,7 +3,16 @@ Faça um programa que peça ao usuário para digitar um número inteiro,
 informe se este número é par ou ímpar. Caso o usuário não digite um número
 inteiro, informe que não é um número inteiro.
 """
+number = input('Digite um número: ')
 
+if number.isdigit():
+    number_int = int(number)
+    if number_int % 2 == 0:
+        print('Seu número é "PAR".')
+    else:
+        print('Seu número é "IMPAR".')
+else:
+    print('Você não digitou números inteiros.')
 
 """
 Faça um programa que pergunte a hora ao usuário e, baseando-se no horário 
