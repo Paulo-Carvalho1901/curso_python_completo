@@ -3,17 +3,18 @@ Faça um programa que peça ao usuário para digitar um número inteiro,
 informe se este número é par ou ímpar. Caso o usuário não digite um número
 inteiro, informe que não é um número inteiro.
 """
-# number = input('Digite um número: ')
+number = input('Digite um número: ')
 
-# if number.isdigit():
-#     number_int = int(number)
-#     if number_int % 2 == 0:
-#         print('Seu número é "PAR".')
-#     else:
-#         print('Seu número é "IMPAR".')
-# else:
-#     print('Você não digitou números inteiros.')
+if number.isdigit():
+    number_int = int(number)
+    if number_int % 2 == 0:
+        print('Seu número é "PAR".')
+    else:
+        print('Seu número é "IMPAR".')
+else:
+    print('Você não digitou números inteiros.')
 
+print()
 """
 Faça um programa que pergunte a hora ao usuário e, baseando-se no horário 
 descrito, exiba a saudação apropriada. Ex. 
@@ -38,3 +39,14 @@ Faça um programa que peça o primeiro nome do usuário. Se o nome tiver 4 letra
 menos escreva "Seu nome é curto"; se tiver entre 5 e 6 letras, escreva 
 "Seu nome é normal"; maior que 6 escreva "Seu nome é muito grande". 
 """
+print()
+primeiro_nome = input('Digite seu primeiro nome: ')
+
+tamanho_nome = len(primeiro_nome)
+
+if tamanho_nome <= 4:
+    print(f'Seu nome {primeiro_nome} é curto! {tamanho_nome} letras.')
+elif tamanho_nome >= 5 and tamanho_nome <= 6:
+    print(f'Seu nome {primeiro_nome} é normal! {tamanho_nome} letras.')
+elif tamanho_nome > 6:
+    print(f'Seu nome {primeiro_nome} é muito grande! {tamanho_nome} letras.')
