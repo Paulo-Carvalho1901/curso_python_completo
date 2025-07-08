@@ -44,9 +44,13 @@ primeiro_nome = input('Digite seu primeiro nome: ')
 
 tamanho_nome = len(primeiro_nome)
 
-if tamanho_nome <= 4:
-    print(f'Seu nome {primeiro_nome} é curto! {tamanho_nome} letras.')
-elif tamanho_nome >= 5 and tamanho_nome <= 6:
-    print(f'Seu nome {primeiro_nome} é normal! {tamanho_nome} letras.')
-elif tamanho_nome > 6:
-    print(f'Seu nome {primeiro_nome} é muito grande! {tamanho_nome} letras.')
+if tamanho_nome > 1: # Esse campo está validando a quantidade aceitavel
+    if tamanho_nome <= 4:
+        print(f'Seu nome {primeiro_nome} é curto! {tamanho_nome} letras.')
+    elif tamanho_nome >= 5 and tamanho_nome <= 6:
+        print(f'Seu nome {primeiro_nome} é normal! {tamanho_nome} letras.')
+    elif tamanho_nome > 6:
+        print(f'Seu nome {primeiro_nome} é muito grande! {tamanho_nome} letras.')
+else:
+    print('Digite mais de uma letra.')
+
