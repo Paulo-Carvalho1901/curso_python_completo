@@ -2,8 +2,8 @@
 
 while True:
     # Solicitando campos ao usuário
-    numero_1 = input('Digite um número.')
-    numero_2 = input('Digite um outro numero')
+    numero_1 = input('Digite um número: ')
+    numero_2 = input('Digite um outro numero: ')
     operador = input('Digite o operador (+-/*): ')
     
     numero_validos = None # criado a flag
@@ -18,6 +18,17 @@ while True:
 
     if numero_validos is None:
         print('Um ou ambos os números digitados são inválidos.')
+        continue
+    
+    # Verificando os operadores
+    operadores_permitidos = '+-/*'
+
+    if operador not in operadores_permitidos:
+        print('Operador inválido.')
+        continue
+
+    if len(operador) > 1:
+        print('Digite apenas um operador.')
         continue
 
     # Validando campo sair
