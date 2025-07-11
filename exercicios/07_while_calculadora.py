@@ -7,6 +7,8 @@ while True:
     operador = input('Digite o operador (+-/*): ')
     
     numero_validos = None # criado a flag
+    numero_1_float = 0
+    numero_2_float = 0
 
     # Tratando os erros
     try:
@@ -30,6 +32,17 @@ while True:
     if len(operador) > 1:
         print('Digite apenas um operador.')
         continue
+
+    # Criado a lógica do calculo
+    print('Realizando sua conta: Confira o resultado a baixo.')
+    if operador == '+':
+        print(f'{numero_1_float}+{numero_2_float}=', numero_1_float + numero_2_float)
+    elif operador == '-':
+        print(f'{numero_1_float}-{numero_2_float}=', numero_1_float - numero_2_float)
+    elif operador == '/':
+        print(f'{numero_1_float}/{numero_2_float}=', numero_1_float / numero_2_float)
+    elif operador == '*':
+        print(f'{numero_1_float}*{numero_2_float}=', numero_1_float * numero_2_float)
 
     # Validando campo sair
     sair = input('Quer sair? [s]im: ').lower().startswith('s')
