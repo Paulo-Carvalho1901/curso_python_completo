@@ -21,9 +21,18 @@ letras_acertadas = ''
 while True:
     letra_digitada = input('Digite uma letra: ')
 
+    # criado logica para ser digitado apenas uma letra
     if len(letra_digitada) > 1:
         print('Digite apenas uma letra.')
         continue
 
+    # criando logica para concatenar a palvra acertada
     if letra_digitada in palavra_secreta:
-        ...
+        letras_acertadas += letra_digitada
+
+    # criando logica para ver a letra_secreta dentro da palavra secreta
+    for letra_secreta in palavra_secreta:
+        if letra_secreta in letras_acertadas:
+            print(letra_secreta)
+        else:
+            print('*')
