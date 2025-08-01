@@ -14,10 +14,13 @@ while True:
     opcao = input('[i]nserir [a]pagar [l]istar: ')
 
     if opcao == 'i':
+        os.system('cls')
+        valor = input('Valor: ')
+        lista.append(valor)
         print('i')
     elif opcao == 'a':
         print('a')
     elif opcao == 'l':
         print('l')
     else:
-        print('Por favor, escolha i, a ou l. ')
+        print('Por favor, escolha i, a ou l. ')()
