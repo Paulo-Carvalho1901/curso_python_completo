@@ -19,7 +19,16 @@ while True:
         lista.append(valor)
         print('i')
     elif opcao == 'a':
-        print('a')
+        indice_str = input('Escolha uma índice para apagar: ')
+        try:
+            indice = int(indice_str)
+            del lista[indice]
+        except ValueError:
+            print('Por favor digite um número inteiro.')
+        except IndexError:
+            print('índice não existe na lista.')
+        except Exception:
+            print('Erro desconhecido.')
     elif opcao == 'l':
         os.system('cls')
         if len(lista) == 0:
