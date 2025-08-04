@@ -23,3 +23,27 @@ contrário disso:
 
 O primeiro dígito do CPF é 7
 """
+cpf = '74682489070' # cpf
+nove_digito = cpf[:9] # pegando os 9 primeiros digitos do cpf
+contador_regresivo_1 = 10 
+
+resultado_digito_1 = 0
+for digito_1 in nove_digito: # iterando em cada um dos 9 digito 
+
+    """
+    Efetuando a multiplicação do digito mais contador_regresivo
+    concatenando com o resultando em uma soma
+    """
+    resultado_digito_1 += int(digito_1) * contador_regresivo_1
+    contador_regresivo_1 -= 1
+
+"""
+resultado * 10 sera executado primeiro, depois
+será executado o resto da divisão
+
+"""
+digito_1 = (resultado_digito_1 * 10) % 11 
+
+# Aqui será feito uma operação ternaria
+digito_1 = digito_1 if digito_1 <= 9 else 0
+print(digito_1)
