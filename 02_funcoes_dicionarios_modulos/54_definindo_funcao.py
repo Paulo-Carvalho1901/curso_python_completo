@@ -29,3 +29,13 @@ saudacao('Paulo Carvalho')
 saudacao('Andreia Carvalho')
 saudacao('Davi Carvalho')
 saudacao()
+
+def soma(a, b):
+    print(a + b)
+
+def subtracao(a, b):
+    print(a - b)
+
+soma(10, 10)
+soma(5, 3)
+subtracao(10, 3)
