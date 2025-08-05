@@ -21,10 +21,11 @@ por padrão, funções Python retornam None (nada)
 # imprimir(1, 2, 3) # Argumentos
 # imprimir(4, 5, 6) 
 
-def saudacao(nome):
+def saudacao(nome='Sem nome'):
     print(f'Bem vindo! {nome}')
 
 
 saudacao('Paulo Carvalho')
 saudacao('Andreia Carvalho')
 saudacao('Davi Carvalho')
+saudacao()
