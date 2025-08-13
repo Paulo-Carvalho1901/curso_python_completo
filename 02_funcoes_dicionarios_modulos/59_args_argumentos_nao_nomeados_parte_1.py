@@ -11,7 +11,7 @@ print(x, y, resto)
 # def soma(x, y):
 #     return x + y
 
-def soma(*args):
+def soma(*args): # args argumentos não nomeados, empacotamento
     total = 0
     for numero in args:
         total += numero
