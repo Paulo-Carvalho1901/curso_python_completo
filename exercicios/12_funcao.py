@@ -20,8 +20,8 @@ print(multiplicacao)
 
 def par_impar(numero):
     if numero % 2 == 0:
-        return 'Numero digitado é PAR.'
-    return 'Numero digitado é IMPAR.'
+        return f'{numero} digitado é PAR.'
+    return f'{numero} digitado é IMPAR.'
 
 print(par_impar(2))
 print(par_impar(3))
