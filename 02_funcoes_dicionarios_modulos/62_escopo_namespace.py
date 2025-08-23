@@ -33,3 +33,14 @@
 # nome definido no escopo global (módulo)
 um_nome = "um_nome (GLOBAL)"
 
+# nome definido no escopo global (módulo)
+def func_global(sou_local: str) -> None:
+    # Escopo local (função e seus parametros)
+
+    # um_nome no escopo local é OUTRA VARIAVEL (sem relação outro escopo)
+    um_nome = "um_nome (LOCAL)" # nome definido no escopo local
+    outro_nome = "outro_nome (LOCAL)" # nome definido no escopo local
+
+    # Parâmetros de funções também são de escopo local no função
+    print(f'Dentro da função: {um_nome}, {outro_nome}, {sou_local}')
+    
