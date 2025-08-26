@@ -11,10 +11,18 @@
 # def quadruplica(numero):
 #     return numero * 4
 
-
-# print(duplicar(2))
-# print(triplicar(2))
-# print(quadruplica(2))
-
-
-
+# Criando uma função multiplicador
+def criar_multiplicador(multiplicador):
+    # dentro dessa função criando outra função multiplicar
+    def multiplicar(numero):
+        # retornando numero * multiplicador
+        return numero * multiplicador
+    # retornando multiplicar
+    return multiplicar
+    
+duplicar = criar_multiplicador(2)
+triplicar = criar_multiplicador(3)
+quadruplicar = criar_multiplicador(4)
+print(duplicar(2))
+print(triplicar(2))
+print(quadruplicar(2))
