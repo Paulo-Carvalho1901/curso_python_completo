@@ -13,6 +13,10 @@
 # Nota: quando eu usar a palavra "nome" sempre estarei me referindo
 # indentificadores de algo: variáveis, funçao, classes, importes, etc...
 
+# conhecimento Python requerido, variáveis, funções e estrutura de dados.
+
+"""Um módulo de exemplo"""
+
 #################################################################################
 
 # O que é escopo
@@ -49,9 +53,15 @@
 
 #######################################################################################
 
+# Código para verificar palavras reservadas
+# python -c "help('keywords')"
 
+namespace_global = globals()
 # nome definido no escopo global (módulo)
 um_nome = "um_nome (GLOBAL)"
+
+# print(id(um_nome), id(namespace_global['um_nome']))
+print(dir(__builtins__))
 
 # nome definido no escopo global (módulo)
 def func_global(sou_local: str) -> None:
@@ -72,10 +82,13 @@ def func_global(sou_local: str) -> None:
 print('Nome do módulo:', __name__)
 print('Arquivo do módulo:', __file__)
 print('Documentação do módulo:', __doc__)
+# print(locals())
 print() # apenas uma quebra de linha
 
-func_global('arg (local)')
+# func_global('arg (local)')
+# print()
 # saída - Dentro da função: um_nome (LOCAL), outro_nome (LOCAL), org (local)
 
-print(f'Fora da função: {um_nome}') # Acessa a variável GLOBAL
+# print(f'Fora da função: {um_nome}') # Acessa a variável GLOBAL
+# print(globals())
 # saída - Fora da função: um_nome (GLOBAL)
