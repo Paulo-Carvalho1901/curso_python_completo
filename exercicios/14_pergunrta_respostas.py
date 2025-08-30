@@ -21,6 +21,8 @@ perguntas = [
 
 # Resolução
 
+
+qtd_acertos = 0
 # Iterando sobre cada pergunta
 for pergunta in perguntas:
     print(pergunta['Pergunta'])
@@ -48,9 +50,14 @@ for pergunta in perguntas:
             if opcoes[escolha_int] == pergunta['Resposta']:
                 acertou = True
 
+    print()
     if acertou:
+        qtd_acertos += 1
         print('Acertou!')
     else:
         print('Errou')
 
     print()
+
+print('Você acertou', qtd_acertos)
+print('de', len(perguntas), 'perguntas.')
