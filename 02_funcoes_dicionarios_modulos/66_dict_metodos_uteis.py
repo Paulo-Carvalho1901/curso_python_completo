@@ -13,7 +13,7 @@
 pessoa = {
     'nome': 'Luiz Otávio',
     'sobrenome': 'Miranda',
-    'idade': '900',
+    'idade': 900,
 }
 
 
