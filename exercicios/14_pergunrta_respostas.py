@@ -19,11 +19,38 @@ perguntas = [
     },
 ]
 
+# Resolução
+
+# Iterando sobre cada pergunta
 for pergunta in perguntas:
     print(pergunta['Pergunta'])
     print()
 
-    for i, opcao in enumerate(pergunta['Opções']):
+    # Iterando sobre cada oções da pergunta
+    # e apresentando com os indices de cada opção com enumerate
+    opcoes = pergunta['Opções']
+    for i, opcao in enumerate(opcoes):
         print(f'{i}) {opcao}')
+
+    # Escolhendo uma opção
+    escolha = input('Escolha uma opção: ')
+    
+    # Tratando o número que vira do usuário
+    acertou = False
+    escolha_int = None
+    qtd_opcoes = len(opcoes) # tamanho de opções na lista
+
+    if escolha.isdigit():
+        escolha_int = int(escolha)
+
+    if escolha_int is not None:
+        if escolha_int >= 0 and escolha_int < qtd_opcoes:
+            if opcoes[escolha_int] == pergunta['Resposta']:
+                acertou = True
+
+    if acertou:
+        print('Acertou!')
+    else:
+        print('Errou')
 
     print()
