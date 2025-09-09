@@ -7,22 +7,36 @@ e retornar um valor especifico.
 por padrão, funções Python retornam None (nada)
 """
 
-# def Python(a, b, c):
-#     print('Varias1')
-#     print('Varias2')
-#     print('Varias3')
-#     print('Varias4')
-
-# def imprimir(a, b, c): # parametros
-#     print(a, b, c)
+# def Print():
+#     print('variavel 1')
+#     print('variavel 2')
+#     print('variavel 3')
 
 
+# Print()
+# Print()
 
-# imprimir(1, 2, 3) # Argumentos
-# imprimir(4, 5, 6) 
 
-def saudacao(nome='Sem nome'):
-    print(f'Bem vindo! {nome}')
+# def soma(a, b, c):
+#     print('Qualquer coisa')
+
+
+# soma(1, 5, 3)
+# soma(1, 5, 3)
+# soma(1, 5, 3)
+
+
+def imprimir(a, b, c):
+    print(a, b, c)
+
+
+
+imprimir(1, 2, 3)
+imprimir(4, 5, 6)
+
+
+def saudacao(nome='Sem nome.'):
+    print(f'Olá, {nome}')
 
 
 saudacao('Paulo Carvalho')
@@ -30,12 +44,10 @@ saudacao('Andreia Carvalho')
 saudacao('Davi Carvalho')
 saudacao()
 
-def soma(a, b):
-    print(a + b)
+#################################################
 
-def subtracao(a, b):
-    print(a - b)
+def imprima(): # estrutura da função
+    print('Olá') # valor a ser retornado pela função
 
-soma(10, 10)
-soma(5, 3)
-subtracao(10, 3)
+
+imprima() # executando a função '()' 
