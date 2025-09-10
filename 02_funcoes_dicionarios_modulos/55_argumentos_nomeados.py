@@ -4,13 +4,13 @@ Argumento nomeado tem nome com sinal de igual
 Argumento não nomeado recebe apenas o argumento (valor)
 """
 
-
-# Definição da função
+# definição da função
 def soma(x, y, z):
     print(f'{x=} {y=} {z=}', '|', 'x + y + z =', x + y + z)
 
 
-# Executar a função
-soma(1, 2, 3)
-soma(y=2, z=3, x=1)
-soma(1, 2, z=5)
+# print(soma(1, 2)) # retorna None
+soma(1, 2, 5) # execução da função
+soma(y=2, z=5, x=1) # colocando argumento normados
+
+print(1, 2, 3, sep='-')
