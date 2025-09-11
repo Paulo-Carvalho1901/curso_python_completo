@@ -11,7 +11,7 @@ A palavra global faz uma variavel de escopo externo
 ser a mesmo no escopo interno.
 """
 
-
+# escolpo do modulo
 x = 1
 
 
