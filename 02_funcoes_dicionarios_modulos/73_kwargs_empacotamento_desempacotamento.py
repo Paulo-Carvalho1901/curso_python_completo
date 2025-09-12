@@ -43,5 +43,5 @@ def mostro_argumentos_nomeados(*args, **kwargs):
         print(chave, valor)
 
 # utilizando argumento nomeados para desempacotamento
-mostro_argumentos_nomeados(1, 2, nome='Paulo', qlq=123)
-
+# mostro_argumentos_nomeados(1, 2, nome='Paulo', qlq=123)
+mostro_argumentos_nomeados(**pessoa_completa) # desempacotando chamada de função com os argumentos
