@@ -10,6 +10,11 @@ pessoa = {
     'sobrenome': 'Souza',
 }
 
+dados_pessoas = {
+    'idade': 16,
+    'altura': 1.60,
+}
+
 # desempacotamento
 # a, b = pessoa.values()
 # # print(a, b)
@@ -24,6 +29,16 @@ pessoa = {
 # for chave, valor in pessoa.items():
 #     print(chave, valor) # retorna uma tupla com valor
 
+
+pessoa_completa = {**pessoa, **dados_pessoas}
+# print(pessoa_completa)
+
 # args e Kwargs
 # args (já vimos)
 # kwargs - keyword arguments (argumentos nomeados)
+def mostro_argumentos_nomeados(*args, **kwargs):
+    print(kwargs)
+
+# utilizando argumento nomeados para desempacotamento
+mostro_argumentos_nomeados(nome='Paulo', qlq=123)
+
