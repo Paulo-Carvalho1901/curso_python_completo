@@ -44,4 +44,14 @@ def mostro_argumentos_nomeados(*args, **kwargs):
 
 # utilizando argumento nomeados para desempacotamento
 # mostro_argumentos_nomeados(1, 2, nome='Paulo', qlq=123)
-mostro_argumentos_nomeados(**pessoa_completa) # desempacotando chamada de função com os argumentos
+# mostro_argumentos_nomeados(**pessoa_completa) # desempacotando chamada de função com os argumentos
+
+
+configuracoes = {
+    'arg1': 1,
+    'arg2': 2,
+    'arg3': 3,
+    'arg4': 4,
+}
+
+mostro_argumentos_nomeados(**configuracoes)
