@@ -36,5 +36,11 @@ novos_produtos = [
 
 
 # Filtro
-lista = [n for n in range(10) if n < 5]
-print(lista)
+# lista = [n for n in range(10) if n < 5]
+novos_produtos = [
+    {**produto, 'preco': produto['preco'] * 1.05} 
+    if produto['preco'] > 20 else {**produto}
+    for produto in produtos
+    if (produto['preco'] >= 20 and produto['preco'] * 1.05) > 10
+]
+p(novos_produtos)
