@@ -3,7 +3,7 @@
 produto = {
     'nome': 'Caneta Azul',
     'preco': 2.5,
-    'Categario': 'Escritorio'
+    'categaria': 'Escritorio'
 }
 
 # for chave, valor in produto.items():
@@ -16,5 +16,19 @@ dc = {
     if isinstance(valor, str) else valor
     for chave, valor in 
     produto.items()
+    if chave != 'categaria'
 }
-print(dc)
+
+# lista dict comprehention
+lista = [
+    ('a', 'valor a'),
+    ('b', 'valor a'),
+    ('c', 'valor a'),
+]
+
+# dc = {
+#     chave: valor
+#     for chave, valor in lista
+# }
+
+print(dict(lista))
