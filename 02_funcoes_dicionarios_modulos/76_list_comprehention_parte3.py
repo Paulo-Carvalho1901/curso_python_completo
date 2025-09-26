@@ -10,6 +10,7 @@ def potenciacaoFn(x, y):
     return x ** y
 
 lista_original = [1, 2, 3, 4, 5] # criando uma lista de números
+
 # Criando uma nova variavel e copiando o valor com list comprehention
 divisao = [divisaoFn(numero, 2) for numero in lista_original] # mapeamento de lista para outra lista
 multiplicacao = [multiplicacaoFn(numero, 2) for numero in lista_original] # mapeamento de lista para outra lista
@@ -33,10 +34,10 @@ print()
 # Filter
 
 numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-novos_numeros = [numero for numero in numeros if numero > 5] # filter
-impares = [numero for numero in numeros if numero % 2 != 0] # filter
-pares = [numero for numero in numeros if numero % 2 == 0] # filter
-outro_if = [numero if numero != 6 else 600 for numero in numeros if numero % 2 == 0]
+novos_numeros = [numero for numero in numeros if numero > 5] # filter > 5
+impares = [numero for numero in numeros if numero % 2 != 0] # filter impares
+pares = [numero for numero in numeros if numero % 2 == 0] # filter pares
+outro_if = [numero if numero != 6 else 600 for numero in numeros if numero % 2 == 0] # condicionais list comprehention
 
 
 print(numeros)
@@ -44,3 +45,5 @@ print(novos_numeros)
 print(impares)
 print(pares)
 print(outro_if)
+
+print('=-' * 30)
