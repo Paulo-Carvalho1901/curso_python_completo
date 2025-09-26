@@ -64,3 +64,14 @@ linhas_e_colunas = [
 ]
 
 print(linhas_e_colunas)
+
+print('=-' * 30)
+print('Manipulando strings')
+
+string = 'Otavio Miranda'
+numeros_letas = 4
+nova_string = '.'.join([
+    string[indice:indice + numeros_letas] 
+    for indice in range(0, len(string), numeros_letas)
+    ])
+print(nova_string)
