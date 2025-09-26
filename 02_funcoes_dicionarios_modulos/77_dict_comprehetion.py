@@ -32,3 +32,9 @@ lista = [
 # }
 
 print(dict(lista))
+
+print('=-' * 40)
+print('Set comprehention')
+
+s1 = {i for i in range(10)}
+print(s1)
