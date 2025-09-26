@@ -75,3 +75,10 @@ nova_string = '.'.join([
     for indice in range(0, len(string), numeros_letas)
     ])
 print(nova_string)
+
+print('=-' * 30)
+print('Lista de nomes')
+
+nomes = ['luiz', 'maria', 'helena', 'joana', 'felipe']
+novos_nomes = [f'{nome[:-1].lower()}{nome[-1].upper()}' for nome in nomes]
+print(novos_nomes)
