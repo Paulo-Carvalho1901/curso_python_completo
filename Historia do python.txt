@@ -1,0 +1,37 @@
+História do Python
+
+1982, no CWI 
+Tudo se incia com o Olandez, Guido Van Hossum, no incio na decade de 80
+ele trabalhava num projeto de uma linguagem chamada ABC.
+
+1989 inicio da linguagem e disponibilizada em 1991
+
+Quando o Guido estava com problemas de hadapitar um programa da em linguagem C,
+dai sugiu a necessidade de uma outra linguagem, que no caso foi o Python.
+
+NOME DA LIMGUAGEM
+O nome Python veio como uma homenagem ao programa de televisão da época
+chamado: 
+Munty Python flying Circus
+
+1995 Guido, sai da Olande e se muda para os estudos unidos,
+com a finalidade de ensinar as pessoas a programar.
+
+lançando o projeoto de CP4E (Computação de computadores para todo mundo)
+recebendo financiamento da DARPA para esse projeto.
+
+2001 foi criado a PSF (Python software fundation)
+ela que cuida das atualizações e manutenções da linguagem Python
+
+2005 a 2013 Guido se torna funcionario do Google
+para implemetar Python em varios projetos
+
+2013 ele foi para dropbox esta até hoje.
+
+Python é: Alto nível
+Linguagem interpretada de tipagem dinamica e forte, de proposito geral
+utilizada praticamente em TUDO, podendo se fazer:
+paginas Webs, app, automações, analise de dados, inteligencia artificial.
+Éla é também batteries included que inclui varias funcionalidade na sua instalação.
+Open source - livre de código aberto.
+Orientada Objeto, falando nisso tudo em Python é um Objeto
