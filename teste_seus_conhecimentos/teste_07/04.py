@@ -18,11 +18,14 @@ lista = [
     {'nome': 'Aline', 'sobrenome': 'Souza'},
 ]
 
-def ordena(item):
-    return item['nome']
+# def ordena(item):
+#     return item['nome']
 
 
-lista.sort(key=ordena)
+# lista.sort(key=ordena)
+
+# expressão lambda
+lista.sort(key=lambda item: item['nome'])
 
 for item in lista:
     print(item)
