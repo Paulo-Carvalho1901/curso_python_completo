@@ -25,7 +25,15 @@ lista = [
 # lista.sort(key=ordena)
 
 # expressão lambda
-lista.sort(key=lambda item: item['nome'])
+# lista.sort(key=lambda item: item['nome'])
 
-for item in lista:
-    print(item)
+def exibir(lista):
+    for item in lista:
+        print(item)
+    print()
+
+l1 = sorted(lista, key=lambda item: item['nome'])
+l2 = sorted(lista, key=lambda item: item['sobrenome'])
+
+exibir(l1)
+exibir(l2)
