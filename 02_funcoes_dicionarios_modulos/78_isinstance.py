@@ -8,5 +8,11 @@ for item in lista:
         item.add(5)
         print(item, isinstance(item, set))
 
-    if isinstance(item, str):
-        print(item.upper(), isinstance(item, set))
+    elif isinstance(item, str):
+        print(item.upper())
+
+    elif isinstance(item, (int, float)):
+        print(item, item * 2)
+
+    else:
+        print('Outros')
