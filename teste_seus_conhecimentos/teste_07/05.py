@@ -13,6 +13,12 @@ def cria_multiplicador(multiplicador):
         return numeros * multiplicador
     return multiplica
 
+# duplica = cria_multiplicador(2)
+duplica = executa(
+    lambda m: lambda n: n * m, 2
+)
+
+print(duplica(2))
 
 print(
     executa(
