@@ -4,4 +4,6 @@ lista = [
 ]
 
 for item in lista:
-    print(item, isinstance(item, set))
+    if isinstance(item, set):
+        item.add(5)
+        print(item, isinstance(item, set))
