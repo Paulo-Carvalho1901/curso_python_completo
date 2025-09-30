@@ -13,5 +13,9 @@ def generator(n=0):
 
 gen = generator(n=0)
 print(gen.__iter__())
-print(next(gen))
-print(next(gen))
+# print(next(gen))
+# print(next(gen))
+# print(next(gen))
+
+for n in gen:
+    print(n)
