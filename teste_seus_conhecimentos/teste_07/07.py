@@ -7,8 +7,10 @@ O escopo local é o escopo onde apenas nomes do mesmo local
 podem ser alcançados.
 """
 
+x = 1
+
+
 def escopo():
-    x = 1
     print(x)
 
 
