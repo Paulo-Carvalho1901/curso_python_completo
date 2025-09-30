@@ -3,8 +3,12 @@
 
 def generator(n=0):
     yield 1 # pausar
-    print('continueando...')
+    print('continuando...')
     yield 2 # pausar
+    print('mais um...')
+    yield 3 # pausar
+    print('vou terminar')
+    return 'fim'
 
 
 gen = generator(n=0)
