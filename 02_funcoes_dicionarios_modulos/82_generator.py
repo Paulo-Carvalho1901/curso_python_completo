@@ -2,8 +2,10 @@
 # generator = (n for n in range(10000))
 
 def generator(n=0):
-    return 1
+    yield 1 # pausar
+    return 'abc'
 
 
 gen = generator(n=0)
-print(gen)
+print(gen.__iter__())
+print(next(gen))
