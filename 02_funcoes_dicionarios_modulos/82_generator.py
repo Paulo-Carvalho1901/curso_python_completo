@@ -3,9 +3,11 @@
 
 def generator(n=0):
     yield 1 # pausar
-    return 'abc'
+    print('continueando...')
+    yield 2 # pausar
 
 
 gen = generator(n=0)
 print(gen.__iter__())
+print(next(gen))
 print(next(gen))
