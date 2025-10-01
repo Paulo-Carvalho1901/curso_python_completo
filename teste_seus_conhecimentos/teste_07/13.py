@@ -1,0 +1,1 @@
+# condição ternaria
