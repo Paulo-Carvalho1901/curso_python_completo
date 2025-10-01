@@ -24,7 +24,7 @@ produtos = [
     {'nome': 'p2', 'preco': 10, },
     {'nome': 'p3', 'preco': 30, },
 ]
-novo_produtos = [produto['nome'] for produto in produtos]
+novo_produtos = [{'nome': produto['nome'], 'preco': produto['preco']} for produto in produtos]
 
 print(novo_produtos)
 print(*novo_produtos, sep='\n')
