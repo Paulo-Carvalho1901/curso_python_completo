@@ -6,9 +6,11 @@
 
 import sys
 
-
-sys.exit()
-print(122)
+platform = 'A minha'
+print(sys.platform)
+print(platform)
+# sys.exit()
+# print(122)
 
 # partes - from nome_modulo import objeto1, objeto2
 # Vantagens: nomes pequenos
