@@ -15,4 +15,16 @@ lista = [n for n in range(10)]
 
 # List comprehension colocando uma logica mapeamento
 lista = [numero * 2 for numero in range(10)]
-print(lista)
+# print(lista)
+
+
+# Mapeamento de dados em list comprehenrion
+produtos = [
+    {'nome': 'p1', 'preco': 20, },
+    {'nome': 'p2', 'preco': 10, },
+    {'nome': 'p3', 'preco': 30, },
+]
+novo_produtos = [produto['nome'] for produto in produtos]
+
+print(novo_produtos)
+print(*novo_produtos, sep='\n')
