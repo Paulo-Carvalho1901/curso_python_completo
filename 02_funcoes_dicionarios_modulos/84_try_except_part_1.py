@@ -4,11 +4,10 @@
 
 a = 18
 b = 0
-c = a / b
-print(c)
+# c = a / b
 
 try:
-    ...
+    c = a / b # desta maneira o erro esta sendo silenciado
 except:
     ...
 
