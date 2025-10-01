@@ -9,10 +9,9 @@
 
 
 def divide(n, d):
-    try:
-        return n / d
-    except ZeroDivisionError:
-        print('dividiu por zero')
+    if d == 0:
+        raise ZeroDivisionError('Você esta tentando dividir por zero.')
+    
+    return n / d
 
-
-divide(8, 0)
+print(divide(8, 0))
