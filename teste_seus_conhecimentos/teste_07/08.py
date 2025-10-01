@@ -25,7 +25,7 @@ produtos = [
     {'nome': 'p3', 'preco': 30, },
 ]
 # novo_produtos = [{'nome': produto['nome'], 'preco': produto['preco']} for produto in produtos]
-novo_produtos = [{**produto} for produto in produtos]
+novo_produtos = [{**produto, 'preco': produto['preco'] * 1.05} for produto in produtos]
 
-print(novo_produtos)
+# print(novo_produtos)
 print(*novo_produtos, sep='\n')
