@@ -4,8 +4,10 @@
 
 try:
     print('ABRIR ARQUIVO')
-    # print(2 / 0)
-except ZeroDivisionError:
+    print(2 / 0)
+except ZeroDivisionError as e:
+    print(e.__class__.__name__)
+    print(e)
     print('ERRO: Dividiu por zero.')
 else:
     print('Não deu erro.')
