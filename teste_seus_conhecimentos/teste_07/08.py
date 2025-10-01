@@ -42,4 +42,12 @@ novo_produtos = [{**produto, 'preco': produto['preco'] * 1.05} if produto['preco
 # filtro list comprehention
 
 lista = [n for n in range(10) if n < 5]
-print(lista)
+# print(lista)
+
+novo_produtos = [
+    {**produto, 'preco': produto['preco'] * 1.05} 
+    if produto['preco'] > 20 else {**produto} 
+    for produto in produtos
+    if (produto['preco'] >= 20 and produto['preco'] * 1.05) > 10
+]
+p(novo_produtos)
