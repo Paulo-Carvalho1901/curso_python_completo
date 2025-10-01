@@ -27,9 +27,9 @@
 # print(sys)
 
 # alias 2 - from nome_modulo import objeto as apelido
-from sys import platform as pf, exit as ex
+# from sys import platform as pf, exit as ex
 
-print(pf)
+# print(pf)
 
 
 # Vantagens: você pode reservar nomes para seu código
@@ -39,3 +39,4 @@ print(pf)
 # Vantagens: importa tudo de um módulo
 # Desvantagens: importa tudo de um módulo
 # from sys import exit, platform
+from sys import *
