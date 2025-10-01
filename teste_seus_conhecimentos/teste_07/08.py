@@ -10,7 +10,6 @@ def p(v):
 
 
 
-
 lista = []
 for numero in range(10):
     lista.append(numero)
@@ -37,4 +36,10 @@ novo_produtos = [{**produto, 'preco': produto['preco'] * 1.05} if produto['preco
 
 # print(*novo_produtos, sep='\n')
 # print(novo_produtos)
-p(novo_produtos)
+# p(novo_produtos)
+
+
+# filtro list comprehention
+
+lista = [n for n in range(10) if n < 5]
+print(lista)
