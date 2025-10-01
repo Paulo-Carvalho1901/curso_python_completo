@@ -18,15 +18,17 @@
 # from sys import exit, platform
 
 # from sys import exit, platform
-
 # print(platform)
+
+# alias 1 - import nome modulo as apelido
+# import sys as s
+# sys = 'alguma coisa'
+# print(s.platform)
+# print(sys)
 
 # alias 2 - from nome_modulo import objeto as apelido
 
-import sys as s
-sys = 'alguma coisa'
-print(s.platform)
-print(sys)
+
 
 # from sys import exit as ex
 # from sys import platform as pf
