@@ -11,4 +11,8 @@ for numero in range(10):
 
 # List comprehension
 lista = [n for n in range(10)]
+# print(lista)
+
+# List comprehension colocando uma logica mapeamento
+lista = [numero * 2 for numero in range(10)]
 print(lista)
