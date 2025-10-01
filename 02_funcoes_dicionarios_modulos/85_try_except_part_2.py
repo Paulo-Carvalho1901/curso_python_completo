@@ -11,6 +11,8 @@ except ZeroDivisionError as e:
     print('ERRO: Dividiu por zero.')
 except IndexError as error:
     print('IndexError')
+except (NameError, ImportError):
+    print('NameError, ImportError')
 else:
     print('Não deu erro.')
 finally:
