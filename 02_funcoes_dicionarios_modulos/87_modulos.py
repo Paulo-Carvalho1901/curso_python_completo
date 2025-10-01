@@ -4,11 +4,11 @@
 # Vantagens: você tem o namespace do módulo
 # Desvantagens: nomes grandes
 
-import sys
+# import sys
 
-platform = 'A minha'
-print(sys.platform)
-print(platform)
+# platform = 'A minha'
+# print(sys.platform)
+# print(platform)
 # sys.exit()
 # print(122)
 
@@ -16,6 +16,10 @@ print(platform)
 # Vantagens: nomes pequenos
 # Desvantagens: Sem o namespace do módulo
 # from sys import exit, platform
+
+from sys import exit, platform
+
+print(platform)
 
 # alias 2 - from nome_modulo import objeto as apelido
 # from sys import exit as ex
