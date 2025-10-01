@@ -14,8 +14,9 @@ except ZeroDivisionError:
     print('ERRO: Dividiu por zero')
 except NameError:
     print('ERRO: is not defined')
-except (TypeError, IndexError):
-    print('ERRO: erro de tipo')
+except (TypeError, IndexError) as error:
+    print('ERRO: TypeError + IndexError')
+    print('ERROR:', error)
 except Exception:
     print('ERRO: Desconhecido')
 
