@@ -17,11 +17,17 @@
 # Desvantagens: Sem o namespace do módulo
 # from sys import exit, platform
 
-from sys import exit, platform
+# from sys import exit, platform
 
-print(platform)
+# print(platform)
 
 # alias 2 - from nome_modulo import objeto as apelido
+
+import sys as s
+sys = 'alguma coisa'
+print(s.platform)
+print(sys)
+
 # from sys import exit as ex
 # from sys import platform as pf
 
