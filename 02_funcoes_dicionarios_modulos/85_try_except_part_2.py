@@ -9,6 +9,8 @@ except ZeroDivisionError as e:
     print(e.__class__.__name__)
     print(e)
     print('ERRO: Dividiu por zero.')
+except IndexError as error:
+    print('IndexError')
 else:
     print('Não deu erro.')
 finally:
