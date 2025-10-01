@@ -1,5 +1,5 @@
 # Try execept, else e finally
-
+# https://docs.python.org/pt-br/3/library/exceptions.html#built-in-exceptions
 # No caso do finally ele sempre será executado
 
 try:
