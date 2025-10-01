@@ -2,7 +2,14 @@
 # List comprehension é uma forma rápida para criar listas
 # a partir de iteráveis.
 
-# print(list(range(10)))
+import pprint
+
+
+def p(v):
+    pprint.pprint(novo_produtos, sort_dicts=False, width=40)
+
+
+
 
 lista = []
 for numero in range(10):
@@ -28,5 +35,6 @@ produtos = [
 # novo_produtos = [{'nome': produto['nome'], 'preco': produto['preco']} for produto in produtos]
 novo_produtos = [{**produto, 'preco': produto['preco'] * 1.05} if produto['preco'] > 20 else {**produto} for produto in produtos]
 
+# print(*novo_produtos, sep='\n')
 # print(novo_produtos)
-print(*novo_produtos, sep='\n')
+p(novo_produtos)
