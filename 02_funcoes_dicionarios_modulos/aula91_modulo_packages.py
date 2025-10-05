@@ -1,5 +1,7 @@
 # from sys import path
 
+# https://stackoverflow.com/questions/2386714/why-is-import-bad
+
 # # Tipos de importações
 # import aula91_packages
 # from aula91_packages import modulo
@@ -13,8 +15,13 @@
 # print(variavel)
 # print(nova_variavel)
 
-from aula91_packages.modulo import soma, fala_01
+# from aula91_packages.modulo import soma, fala_01
 
-print(__name__)
+# print(__name__)
+# print(soma(2, 2))
+# fala_01()
+
+from aula91_packages import soma, qualquer_coisa, variavel, nova_variavel
+
 print(soma(2, 2))
-fala_01()
+qualquer_coisa()

@@ -4,12 +4,13 @@
 #     'nova_variavel',
 # ]
 
-from aula91_packages.modulo_m import fala_01
+# from aula91_packages.modulo_m import fala_01
 variavel = 'Alguma coisa'
 
 def soma(x, y):
     return x + y
 
+def qualquer_coisa():
+    print('oi')
 
 nova_variavel = 'ok'
-# fala_01()
