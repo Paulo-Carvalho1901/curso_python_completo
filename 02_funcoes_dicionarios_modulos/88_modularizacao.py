@@ -16,3 +16,9 @@
 
 # print('Esse modulo se chama:', __name__)
 # print(*sys.path, sep='\n')
+
+# import aula89
+# from aula89 import variavel_modulo
+
+# print(aula89.variavel_modulo)
+# print(variavel_modulo)
