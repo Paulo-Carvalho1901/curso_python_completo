@@ -7,4 +7,12 @@
 # padrão
 # O python conhece todos os módulos e pacotes presentes
 # nos caminhos de sys.path
-print('Esse modulo se chama:', __name__)
+# try:
+#     import sys
+#     sys.path.append()
+# except ModuleNotFoundError:
+#     ...
+# import aula_88_modularizacao
+
+# print('Esse modulo se chama:', __name__)
+# print(*sys.path, sep='\n')
