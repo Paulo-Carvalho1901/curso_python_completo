@@ -6,7 +6,10 @@ from dados import produtos
 # Aumente os preços dos produtos a seguir em 10%
 # Gere novos_produtos por deep copy (cópia profunda)
 
-novos_produtos = copy.deepcopy(produtos)
+novos_produtos = [
+    {**p, 'preco': round(p['preco'] * 1.1, 2)}
+    for p in produtos
+]
 
 print(*produtos, sep='\n')
 print()
