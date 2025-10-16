@@ -8,5 +8,6 @@ def criar_saudacao(saudacao, nome):
 
 saudacao_1 = criar_saudacao('Bom dia', 'Paulo')
 saudacao_2 = criar_saudacao('Boa noite', 'Paulo')
-print(saudacao_1)
-print(saudacao_2)
+
+print(saudacao_1()) # clouse saudacao_1()
+print(saudacao_2())
