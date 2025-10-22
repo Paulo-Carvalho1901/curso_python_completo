@@ -14,12 +14,20 @@ por padrão, funções Python retornam None (nada).
 
 
 # definindo uma função em python (def)
-def Print():
-    print('Variavel1')
-    print('Variavel2')
-    print('Variavel3')
-    print('Variavel4')
+# def Print(a, b, c): # parâmetros
+#     print('Variavel1')
+#     print('Variavel2')
+#     print('Variavel3')
+#     print('Variavel4')
+
+def imprimir(a, b, c): # parâmetros
+    print('Várias1')
+    print('Várias2')
+    print('Várias3')
+    print('Várias4')
 
 
-Print()
-Print()
+# executandoa a função com os parenteses ()
+# Como foi colocado parâmetros nessa função agora na chamada temos que passar para função
+imprimir(1, 2, 3)
+ 
