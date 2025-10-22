@@ -10,5 +10,5 @@ def sum(x, y):
 
 
 # execute the function
-sum(1, 2)
-sum(y=2, x=1)
+sum(1, 2) # unnamed arguments (positional)
+sum(y=2, x=1) # named arguments
