@@ -21,13 +21,10 @@ por padrão, funções Python retornam None (nada).
 #     print('Variavel4')
 
 def imprimir(a, b, c): # parâmetros
-    print('Várias1')
-    print('Várias2')
-    print('Várias3')
-    print('Várias4')
+    print(a, b, c)
 
 
 # executandoa a função com os parenteses ()
 # Como foi colocado parâmetros nessa função agora na chamada temos que passar para função
-imprimir(1, 2, 3)
- 
+imprimir(1, 2, 3) # argumentos
+imprimir(4, 5, 6)
