@@ -11,4 +11,4 @@ def sum(x, y):
 
 # execute the function
 sum(1, 2)
-sum(2, 1)
+sum(y=2, x=1)
