@@ -20,11 +20,18 @@ por padrão, funções Python retornam None (nada).
 #     print('Variavel3')
 #     print('Variavel4')
 
-def imprimir(a, b, c): # parâmetros
-    print(a, b, c)
+# def imprimir(a, b, c): # parâmetros
+#     print(a, b, c)
 
 
-# executandoa a função com os parenteses ()
-# Como foi colocado parâmetros nessa função agora na chamada temos que passar para função
-imprimir(1, 2, 3) # argumentos
-imprimir(4, 5, 6)
+# # executandoa a função com os parenteses ()
+# # Como foi colocado parâmetros nessa função agora na chamada temos que passar para função
+# imprimir(1, 2, 3) # argumentos
+# imprimir(4, 5, 6)
+
+def greeting(name='without name'):
+    print(f'Hi, {name}')
+
+
+greeting('Luiz')
+greeting('Maria')
