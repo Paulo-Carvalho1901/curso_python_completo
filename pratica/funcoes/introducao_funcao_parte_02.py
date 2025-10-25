@@ -14,3 +14,15 @@ def saudacao():
 
 #chamada da função
 saudacao() # Sáida: Olá, mundo!
+
+# Parâmetros e Argumentos
+ 
+# Parâmetro posicionais
+def somar(a, b):
+    """Soma dois números e retorna o resultado"""
+    return a + b
+
+
+# Chamada com argumentos posicionais
+resultado = somar(5, 3) # resultado 8
+print(resultado)
