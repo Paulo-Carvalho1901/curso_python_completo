@@ -44,3 +44,15 @@ def minmax(numeros):
 # Desempacotamento de tupla
 menor, maior = minmax([5, 2, 8, 1, 9])
 print(f'Menor: {menor}, Maior: {maior}')
+
+
+# Retorno condicional
+def divisao_segura(a, b):
+    """Divide a por b, tratando divisão por zero."""
+    if b == 0:
+        return 'Erro: Divisão por zero.'
+    else:
+        return a / b
+    
+print(divisao_segura(10, 2))
+print(divisao_segura(10, 0))
