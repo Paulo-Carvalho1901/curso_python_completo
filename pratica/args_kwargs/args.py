@@ -12,6 +12,7 @@ args - Argumentos não nomeados
 #     return x + y
 
 def soma(*args):
+    # print(args)
     total = 0
     for numero in args:
         total += numero
@@ -19,12 +20,15 @@ def soma(*args):
 
 
 soma_1_2_3 = soma(1, 2, 3)
-print(soma_1_2_3)
+# int(soma_1_2_3)
 
 soma_4_5_6 = soma(4, 5, 6)
-print(soma_4_5_6)
+# print(soma_4_5_6)
 
-outra_soma = soma(1, 2, 3, 4, 5, 6, 7, 78)
+numeros = 1, 2, 3, 4, 5, 6, 7, 78
+outra_soma = soma(*numeros)
 print(outra_soma)
 
-print(sum((1, 2, 3, 4, 5, 6, 7, 78)))
+print(sum(numeros))
+# print(sum((1, 2, 3, 4, 5, 6, 7, 78)))
+
