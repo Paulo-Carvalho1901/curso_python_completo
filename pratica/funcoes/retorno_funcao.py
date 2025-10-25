@@ -15,3 +15,13 @@ soma2 = soma(3, 3)
 print(soma1)
 print(soma2)
 print(11, 55)
+
+# Sem retorno
+def saudacao(nome):
+    """Imprimir uma saudação e não retorna valor explícito."""
+    print(f'Olá', {nome})
+
+
+# A função retorna None implicitamente
+resultado = saudacao('Maria')
+print(f'Valor retornado:', {resultado}) # Saída: valor reotornado: None
