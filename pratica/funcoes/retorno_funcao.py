@@ -25,3 +25,12 @@ def saudacao(nome):
 # A função retorna None implicitamente
 resultado = saudacao('Maria')
 print(f'Valor retornado:', {resultado}) # Saída: valor reotornado: None
+
+# Retorno um valor
+def quadrado(numero):
+    """Retorno o quadrado de número."""
+    return numero ** 2
+
+
+resultado = quadrado(5)
+print(f'O quadrado de 5 é {resultado}') 
