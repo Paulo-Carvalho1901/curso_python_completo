@@ -41,3 +41,12 @@ print(msg)  # Saída: Bom dia, Ana!
 # Posicionais vêm primeiro, depois os nomeados
 msg = saudacao("Carlos", mensagem="Boa tarde")
 print(msg)  # Saída: Boa tarde, Carlos!
+
+# Parâtros Padão
+
+def saudacao(nome, mensagem="Olá"):
+    """Cria uma saudação com mensagem padrão opcional."""
+    return f"{mensagem}, {nome}!"
+
+print(saudacao("Maria"))         # Saída: Olá, Maria!
+print(saudacao("João", "Oi"))    # Saída: Oi, João!
