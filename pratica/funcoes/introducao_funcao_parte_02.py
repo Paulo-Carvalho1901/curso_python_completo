@@ -26,3 +26,18 @@ def somar(a, b):
 # Chamada com argumentos posicionais
 resultado = somar(5, 3) # resultado 8
 print(resultado)
+
+# Parâmetros Nomeados
+
+def saudacao(nome, mensagem):
+    """Cria uma saudação personalizada."""
+    return f"{mensagem}, {nome}!"
+
+# Argumentos nomeados (a ordem não importa)
+msg = saudacao(mensagem="Bom dia", nome="Ana")
+print(msg)  # Saída: Bom dia, Ana!
+
+# Misturando posicionais e nomeados
+# Posicionais vêm primeiro, depois os nomeados
+msg = saudacao("Carlos", mensagem="Boa tarde")
+print(msg)  # Saída: Boa tarde, Carlos!
