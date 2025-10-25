@@ -34,3 +34,13 @@ def quadrado(numero):
 
 resultado = quadrado(5)
 print(f'O quadrado de 5 é {resultado}') 
+
+# Retornando varios valores
+def minmax(numeros):
+    """Retornando o menor e o maior valor de um sequencia."""
+    return min(numeros), max(numeros)
+
+
+# Desempacotamento de tupla
+menor, maior = minmax([5, 2, 8, 1, 9])
+print(f'Menor: {menor}, Maior: {maior}')
