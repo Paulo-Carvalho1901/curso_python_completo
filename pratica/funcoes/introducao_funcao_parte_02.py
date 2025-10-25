@@ -1,7 +1,16 @@
-# sintax básica exemplo simples
+# sintax básica
 
 def nome_da_funcao(parametro1, parametro2):
     """Docstring: Documentaçao da função"""
     # Corpo da função
     # Código que será executada quando a função for chamada
     return # valor opcional 
+
+#  exemplo simples
+
+def saudacao():
+    """Imprimindo uma saudação."""
+    print('Olá, mundo!')
+
+#chamada da função
+saudacao() # Sáida: Olá, mundo!
