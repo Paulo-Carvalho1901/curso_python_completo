@@ -27,3 +27,17 @@ def quadrado(x):
 
 print(aplicar_operação(dobro, 5))
 print(aplicar_operação(quadrado, 5))
+
+
+# Função retornando função
+def criar_multiplicador(fator):
+    """Retorno uma função que multiplica pelo fator especificado"""
+    def multiplicar(x):
+        return x * fator
+    return multiplicar
+
+duplicar = criar_multiplicador(2)
+triplicar = criar_multiplicador(3)
+
+print(duplicar(5))
+print(triplicar(5))
