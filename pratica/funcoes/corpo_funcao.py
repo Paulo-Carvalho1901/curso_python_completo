@@ -33,3 +33,8 @@ print(funcao_interna)
 
 print(funcao_interna(10))
 # variavel livre
+
+# closure
+# varificando a função clusure
+from inspect import getclosurevars
+print(getclosurevars(funcao_interna))
