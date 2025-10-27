@@ -20,3 +20,10 @@ def soma(*args):
 
 
 print(soma(2, 3))
+
+# desempacotamento de parâmetro
+def soma(x, z, y):
+    return x + y + z
+
+
+print(soma(*[1, 2, 3]))
