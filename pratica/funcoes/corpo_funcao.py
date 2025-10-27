@@ -20,3 +20,16 @@ def diga_oi(nome):
     return resultado
 
 print(diga_oi('Paulo'))
+
+
+# Compartilhamento de escopo
+def add(x):
+    def inner(y):
+        return x + y
+    return inner
+
+funcao_interna = add(1) 
+print(funcao_interna)
+
+print(funcao_interna(10))
+# variavel livre
