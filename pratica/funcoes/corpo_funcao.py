@@ -38,3 +38,22 @@ print(funcao_interna(10))
 # varificando a função clusure
 from inspect import getclosurevars
 print(getclosurevars(funcao_interna))
+
+
+# Corrotina
+def corrotina():
+    print('Inicie a corrotina.')
+    yield
+    print('Retomei o controle')
+    yield
+    print('Retomei o controle 2')
+    yield
+    print('Retomei o controle 3')
+    yield
+
+
+c = corrotina()
+next(c)
+next(c)
+next(c)
+next(c)
