@@ -12,3 +12,18 @@ def saudacao(nome):
 f = saudacao
 
 print(f('Maria'))
+
+# Função com argumentos
+def aplicar_operação(func, valor):
+    """Aplicando uma função a valor e retorna o resultado"""
+    return func(valor)
+
+def dobro(x):
+    return x * 2
+
+def quadrado(x):
+    return x ** 2
+
+
+print(aplicar_operação(dobro, 5))
+print(aplicar_operação(quadrado, 5))
