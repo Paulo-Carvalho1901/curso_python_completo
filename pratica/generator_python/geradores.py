@@ -4,11 +4,23 @@
 #     print(val)
 
 
+# def gerador():
+#     yield 1
+#     yield 2
+#     yield 3
+
+# for val in gerador():
+#     print(val)
+
+
+
 def gerador():
     yield 1
     yield 2
     yield 3
 
-for val in gerador():
-    print(val)
 
+g =  gerador()
+print(next(g))
+print(next(g))
+print(next(g))
