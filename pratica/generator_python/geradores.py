@@ -14,13 +14,26 @@
 
 
 
+# def gerador():
+#     yield 1
+#     yield 2
+#     yield 3
+
+
+# g =  gerador()
+# print(next(g))
+# print(next(g))
+# print(next(g))
+
+
 def gerador():
-    yield 1
-    yield 2
-    yield 3
+    val = 0
+    while True:
+        yield val
+        val += 1
 
 
-g =  gerador()
+g = gerador()
 print(next(g))
 print(next(g))
 print(next(g))
