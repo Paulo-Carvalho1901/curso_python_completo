@@ -15,4 +15,9 @@ def apply(func, val):
     return func(val)
 
 
-print(apply(lambda x: x + 1, 2))
+def soma_mais_um(x):
+    return x + 1
+
+
+print(apply(soma_mais_um, 1))
+
