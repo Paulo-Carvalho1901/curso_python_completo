@@ -41,3 +41,9 @@ for val in seq:
     result.append(val ** 2)
 
 print(result)
+
+# declarativa
+seq = [1, 2, 3, 4, 5]
+result = map(lambda x: x ** 2, seq)
+
+print(list(result))
