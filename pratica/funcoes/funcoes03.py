@@ -18,11 +18,16 @@ print(apply(soma_mais_um, 1))
 # evitar o uso de loops com for while. Transformando a maneira 
 # imperativa de se programar, para uma forma declarativa
 
-# funções imperativas
+# função imperativas
 seq = [1, 2, 3, 4, 5]
 result = []
 
 for val in seq:
     result.append(val ** 2)
+
+print(result)
+
+# função declarativa
+result = list(map(lambda x: x ** 2, seq))
 
 print(result)
