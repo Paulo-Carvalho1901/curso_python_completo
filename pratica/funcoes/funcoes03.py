@@ -38,3 +38,9 @@ from itertools import takewhile
 
 takewhile(lambda x: x != 3, [1, 2, 3, 4, 5, 6, 7, 8])
 print(list(takewhile(lambda x: x != 3, [1, 2, 3, 4, 5, 6, 7, 8])))
+
+print()
+# selecionando apenas str da lista
+l = ['a', 2, 3, 4, 5, 'b']
+
+print(list(filter(lambda x: type(x) == str, l)))
