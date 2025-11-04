@@ -27,7 +27,14 @@ for val in seq:
 
 print(result)
 
+print()
 # função declarativa
 result = list(map(lambda x: x ** 2, seq))
 
 print(result)
+
+print()
+from itertools import takewhile
+
+takewhile(lambda x: x != 3, [1, 2, 3, 4, 5, 6, 7, 8])
+print(list(takewhile(lambda x: x != 3, [1, 2, 3, 4, 5, 6, 7, 8])))
