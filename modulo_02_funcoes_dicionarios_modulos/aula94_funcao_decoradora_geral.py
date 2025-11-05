@@ -20,6 +20,7 @@ def criar_funcao(func):
 
 @criar_funcao 
 def inverte_string(string):
+    print(f'{inverte_string.__name__}')
     return string[::-1]
 
 
