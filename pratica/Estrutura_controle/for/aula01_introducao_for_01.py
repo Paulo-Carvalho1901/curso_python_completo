@@ -1,5 +1,10 @@
 # Iterando com while
 
+"""
+Geralmente a estrutura while se utiliza com
+iterações que não sabemos sua parada (quando éla termina)
+"""
+
 texto = 'Python'
 
 i = 0
