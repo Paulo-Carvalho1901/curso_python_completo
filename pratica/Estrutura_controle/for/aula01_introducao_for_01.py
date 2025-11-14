@@ -27,4 +27,5 @@ while senha_salva != senha_digitada:
 
     repeticoes += 1
 
+print('Teve', repeticoes, 'repetiçoes')
 print('Aquele laço acima pode ter repetições infinitas!')
