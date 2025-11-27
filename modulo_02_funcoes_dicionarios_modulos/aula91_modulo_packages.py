@@ -21,7 +21,12 @@
 # print(soma(2, 2))
 # fala_01()
 
-from aula91_packages import soma, qualquer_coisa, variavel, nova_variavel
 
-print(soma(2, 2))
-qualquer_coisa()
+import aula91_packages
+from aula91_packages import soma
+from aula91_packages import fala_0i
+
+# print(aula91_packages.dobra(2))
+
+print(soma(2, 3))
+fala_0i()
