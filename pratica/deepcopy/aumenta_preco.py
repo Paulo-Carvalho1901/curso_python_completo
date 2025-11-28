@@ -30,9 +30,18 @@ produtos_ordenados_nomes = sorted(
     key=lambda produto: produto['nome'], reverse=True
 )
 
-print(*produtos, sep='\n')
-print()
-print(*produtos_ordenados_nomes, sep='\n')
+# print(*produtos, sep='\n')
+# print()
+# print(*produtos_ordenados_nomes, sep='\n')
 
 # Ordene os produtos por preco crescente (do menor para maior)
 # Gere produtos_ordenados_por_preco por deep copy (cópia profunda)
+
+produtos_ordenados_por_preco = sorted(
+    copy.deepcopy(produtos),
+    key=lambda produto: produto['preco']
+)
+
+print(*produtos, sep='\n')
+print()
+print(*produtos_ordenados_por_preco, sep='\n')
