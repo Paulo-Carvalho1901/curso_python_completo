@@ -7,10 +7,11 @@
 
 def criar_funcao(func):
     def interna(*args, **kwargs):
+        print('Vou te decorar!')
         for arg in args:
             e_string(arg)
         resultado = func(*args, **kwargs)
-        #
+        print('Ok, você foi decorador!')
         return resultado
     return interna
 
