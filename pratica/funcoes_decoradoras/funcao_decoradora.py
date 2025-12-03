@@ -5,30 +5,12 @@
 # usar as funções decoradoras em outras funções.
 # Decoradores são "Syntax Sugar" (Açucar sintático)
 
-# funcao com logica funcao decoradora
-def criar_funcao(func):
-        def interna(*args, **kwargs):
-            print('Vou te decorar!')
-            for arg in args:
-                e_string(arg)
-            resultado = func(*args, **kwargs)
-            print(f'O seu resultado foi {resultado}')
-            print('Ok, agora voce foi decorada!')
-            return resultado
-        return interna
 
 
 # função que inverte string
 def inverte_string(string):
-
     return string[::-1]
 
 
-# função que checa se é string
-def e_string(param):
-    if not isinstance(param, str):
-        raise TypeError('Parametro deve ser uma string')
-
-inverte_string_checando_parametro = criar_funcao(inverte_string)
-invertida = inverte_string_checando_parametro('123')
+invertida = inverte_string('Paulo')
 print(invertida)
