@@ -1,0 +1,10 @@
+Ambiente e computação
+
+Podemos encarar ambiente como um "estado"
+
+Uma conbinação de hardware e sosftware especifica
+
+- Um servidor com GNU/Linux Slackware
+- Uma mpaquina virtual com macOS 
+- Um container windows serve 2025
+
