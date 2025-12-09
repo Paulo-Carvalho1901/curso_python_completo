@@ -24,6 +24,7 @@ lista_soma = soma_listas(lista_a, lista_b)
 print(lista_soma)
 
 # segunda solução
+print()
 
 from itertools import islice
 
@@ -38,3 +39,13 @@ print(soma_listas([0.5, 1.5], [2.0, 3.0, 4.0]))
 print(soma_listas([10, 20, 30], [1]))
 print(soma_listas([], [1, 2, 3]))
 
+# terceira solução puro python
+print()
+
+lista_a = [1, 2, 3, 4, 5, 6, 7]
+lista_b = [1, 2, 3, 4]
+
+lista_soma = []
+for i in range(len(lista_b)):
+    lista_soma.append(lista_a[i] + lista_b[i])
+print(lista_soma)
