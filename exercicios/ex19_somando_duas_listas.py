@@ -49,3 +49,11 @@ lista_soma = []
 for i in range(len(lista_b)):
     lista_soma.append(lista_a[i] + lista_b[i])
 print(lista_soma)
+
+# quarta solução
+print()
+
+lista_soma2 = []
+for i, _ in enumerate(lista_b):
+    lista_soma2.append(lista_a[i] + lista_b[i])
+print(lista_soma2)
