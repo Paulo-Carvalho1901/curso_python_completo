@@ -23,3 +23,18 @@ lista_b = [1, 2, 3, 4]
 lista_soma = soma_listas(lista_a, lista_b)
 print(lista_soma)
 
+# segunda solução
+
+from itertools import islice
+
+def soma_listas_itertools(lista_a, lista_b):
+    tamanho = min(len(lista_a), len(lista_b))
+    # islice limita cada lista até o tamanho da menor
+    return [a + b for a, b in zip(islice(lista_a, tamanho), islice(lista_b, tamanho))]
+
+print(soma_listas_itertools([1,2,3,4,5], [10,20]))  
+print(soma_listas([1, 2, 3], [4, 5, 6]))
+print(soma_listas([0.5, 1.5], [2.0, 3.0, 4.0]))
+print(soma_listas([10, 20, 30], [1]))
+print(soma_listas([], [1, 2, 3]))
+
