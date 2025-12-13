@@ -3,7 +3,7 @@
 # Permutação - Ordem importa
 # Produto - Ordem importa e repete valores únicos
 
-from itertools import combinations
+from itertools import combinations, permutations, product
 
 def print_iter(iterator):
     print(*list(iterator), sep='\n')
@@ -14,7 +14,12 @@ pessoas = [
 ]
 
 camiseta = [
-    ['preta', 'branca']
+    ['preta', 'branca'],
+    ['P', 'M', 'G'],
+    ['Mascolina', 'Feminino', 'unisex'],
+    ['Algodão', 'Poliester']
 ]
 
-print_iter(combinations(pessoas, 2))
+# print_iter(combinations(pessoas, 2))
+# print_iter(permutations(pessoas, 2))
+print_iter(product(*camiseta))
