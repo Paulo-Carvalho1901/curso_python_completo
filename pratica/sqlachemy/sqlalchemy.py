@@ -14,4 +14,14 @@ O toolkit suporta:
 * ORM
 * Sistemas de plugins
 * Eventos 
+
+Inicial em 2005 primeira release em 2006
+Criando por Michel Bayer
+    * SQLAlchemy 
+    * MAKO
+    * Alembic
+Atualizado na versão 2.0.27
+Licença MIT
+Cross Plataforma
 """
+
