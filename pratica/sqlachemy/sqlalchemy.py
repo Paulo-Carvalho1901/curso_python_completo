@@ -34,10 +34,12 @@ Um entendimento geral
 
 ORM:
 Object Relational Mapper (ORM)
-
+-----------------------------------------------------------------------------------------------
 CORE:
 Schema / type - SQL Expression language - Engine
 Connection Pooling Dialect
-
+------------------------------------------------------------------------------------------------
 DBAPI
+
+
 """
