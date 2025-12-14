@@ -54,4 +54,17 @@ Engine:
     * Pool: Deixa conexão em memória para ser mais facil reutilização
 SQL Expression Language: Construções em Python para representar SQL
 SCHEMAS/TYPES: Contruções em python que representam tabelas, colunas e tipos de dados. 
+
+Engine:
+
+A engine, é o coração do alchemy, é ma fárica de conexões com o banco de dados
+
+O objetivo dela é que de forma dinâmica podemos nos comunicar com diferentes drivers de banco
+de dados usando dialetos especificos para cada banco de dados
+
+Engine
+    ----> Dialeto
+                ----> DBAPI
+
+
 """
