@@ -89,4 +89,9 @@ Uma instrução relativamente cara de IO é criação de conexão com o
 banco de dados. Por esse motivo, o sqlalchemy armazenamento as conexões
 em um 'reservatório' de conexão. chamado Pool.
 
+ACID
+A = Atomicidade
+conceito de atomicidade, é quando num banco de dados, 
+garante que as coisas funcione de forma concistente.
+
 """
