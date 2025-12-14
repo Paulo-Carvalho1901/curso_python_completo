@@ -83,4 +83,10 @@ Por exemplos, o SQLAlchemy suporta nativamente:
 Contando com diversas implementações via pluging como CookroachDB,
 Firebird, Amazon Redshift, etc.
 
+Pool:
+
+Uma instrução relativamente cara de IO é criação de conexão com o
+banco de dados. Por esse motivo, o sqlalchemy armazenamento as conexões
+em um 'reservatório' de conexão. chamado Pool.
+
 """
