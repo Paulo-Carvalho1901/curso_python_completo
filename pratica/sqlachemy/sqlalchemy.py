@@ -23,5 +23,6 @@ Criando por Michel Bayer
 Atualizado na versão 2.0.27
 Licença MIT
 Cross Plataforma
-"""
 
+# pip install sqlachemy
+"""
