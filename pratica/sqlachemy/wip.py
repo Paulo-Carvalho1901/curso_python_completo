@@ -6,5 +6,11 @@ engine = create_engine(
     'sqlite://'
 )
 
-print(engine)
-print(engine.dialect)
+# print(engine)
+# print(engine.dialect)
+
+conn = engine.connect()
+
+print(conn)
+
+conn.close()
