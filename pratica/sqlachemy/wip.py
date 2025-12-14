@@ -6,11 +6,17 @@ engine = create_engine(
     'sqlite://'
 )
 
+print(engine.pool)
+
 # print(engine)
 # print(engine.dialect)
 
-conn = engine.connect()
+conn1 = engine.connect()
+conn2 = engine.connect()
+conn1.close
+conn2.close
+conn3 = engine.connect()
 
-print(conn)
+print(engine.pool.status())
 
-conn.close()
+# conn.close()
