@@ -66,5 +66,21 @@ Engine
     ----> Dialeto
                 ----> DBAPI
 
+Dialetos:
+
+A engine fabrica de conexão com a base de dados especifica usando os 
+dialetos, Dialetos são chamados diretas para os divers especificos para 
+databases especificos.
+
+Por exemplos, o SQLAlchemy suporta nativamente:
+
+    * SQLite
+    * PostgreSQL
+    * MySQL / MariaDB
+    * Oracle
+    * Microsoft SQL Server
+
+Contando com diversas implementações via pluging como CookroachDB,
+Firebird, Amazon Redshift, etc.
 
 """
