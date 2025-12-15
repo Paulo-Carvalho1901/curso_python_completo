@@ -96,8 +96,6 @@ garante que as coisas funcione de forma concistente.
 
 Result:
 
-O resultado obtido no executado
-
 O resultado obtido no execute é um objeto chamado Result ele
 implementa diversos métodos, além de ser um iterável
 
@@ -107,4 +105,3 @@ implementa diversos métodos, além de ser um iterável
     * first() pega 1, mas não da erro se não conseguir 
 
 """
-
