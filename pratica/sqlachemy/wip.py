@@ -1,12 +1,12 @@
-from sqlalchemy import create_engine # fabrica de conexões
- 
-# Criando banco de dados em memória
-engine = create_engine(
-    #'postgresql+psycopg://app_user:app_password@localhost:5432/app_db'
-    # echo=True
-    'sqlite://'
-)
+from sqlalchemy import Column, DateTime, Integer, String, func
+from sqlalchemy.orm import declarative_base
 
-conn = engine.connect()
 
-conn.close()
+class Base(declarative_base):
+    ...
+
+
+class Comment(Base):
+    __tablename__ = 'comments'
+
+    
