@@ -1,20 +1,19 @@
-from sqlalchemy import Column, DateTime, Integer, String, func
-from sqlalchemy.orm import declarative_base
+from datetime import datetime
+
+from sqlalchemy import func
+from sqlalchemy.orm import Mapped, mapped_column, registry
+
+reg = registry()
 
 
-class Base(declarative_base):
-    ...
-
-
-class Comment(Base):
+@reg.mapped_as_dataclass
+class Comment:
     __tablename__ = 'comments'
 
-    id = Column(Integer, primary_key=True)
-    name = Column(String, nullable=False)
-    Comment = Column(String, nullable=False)
-    live = Column(String, nullable=False)
-    created_at = Column(DateTime, server_default=func.now())
-
-    def __repr__(self) -> str:
-        return f'comment({self.id=}, {self.name=}, {self.comment=}, {self.live=}, {self.created_at=})'
-    
+    id: Mapped[int] = mapped_column(init=False, primary_key=True)
+    nama: Mapped[str]
+    Comment: Mapped[str]
+    live: Mapped[str]
+    created_at: Mapped[datetime] = mapped_column(
+        init=False, server_default=func.now()
+    )
