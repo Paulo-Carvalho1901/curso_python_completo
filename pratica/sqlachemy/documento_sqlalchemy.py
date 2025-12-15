@@ -104,4 +104,14 @@ implementa diversos métodos, além de ser um iterável
     * fatchall() pega todos os valores
     * first() pega 1, mas não da erro se não conseguir 
 
+ORM:
+
+Antes de entrarmos a fundo nisso, acho que cabe uma explicação do 
+termos ORM
+
+    * Object: quer dizer um objeto python, como uma classe que contruímos
+    * Relational: Relacional é uma relação aos bancos relacionais
+    * Mapper: quer dizer que é feito um mapeamento entre os netadados das tabelas
+em uma classe e cada row relacionada a uma instância
+
 """
