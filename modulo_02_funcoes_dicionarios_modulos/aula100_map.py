@@ -1,5 +1,6 @@
-# map - para mapear dados
+from functools import partial
 
+# map - para mapear dados
 def print_iter(iterador):
     print(*list(iterador), sep='\n' )
     print()
@@ -17,9 +18,19 @@ produtos = [
 def aumentar_porcentagem(valor, porcentagem):
     return round(valor * porcentagem, 2)
 
+
+aumentar_dez_porcento = partial(
+    aumentar_porcentagem,
+    porcentagem=1.1
+)
+
 # list comprehention
+# novos_produtos = [
+#     {**produto, 'preco': aumentar_porcentagem(produto['preco'], 1.1)} for produto in produtos
+# ]
+
 novos_produtos = [
-    {**produto, 'preco': aumentar_porcentagem(produto['preco'], 1.1)} for produto in produtos
+    {**produto, 'preco': aumentar_dez_porcento(produto['preco'])} for produto in produtos
 ]
 
 # mapeamento
