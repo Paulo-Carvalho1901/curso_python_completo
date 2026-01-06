@@ -1,4 +1,5 @@
 from functools import partial
+from types import GeneratorType
 
 # map - para mapear dados
 def print_iter(iterador):
@@ -29,10 +30,21 @@ aumentar_dez_porcento = partial(
 #     {**produto, 'preco': aumentar_porcentagem(produto['preco'], 1.1)} for produto in produtos
 # ]
 
-novos_produtos = [
-    {**produto, 'preco': aumentar_dez_porcento(produto['preco'])} for produto in produtos
-]
+# novos_produtos = [
+#     {**produto, 'preco': aumentar_dez_porcento(produto['preco'])} for produto in produtos
+# ]
+
+def mudo_preco_de_produto(produto):
+    return {**produto, 'preco': aumentar_dez_porcento(produto['preco'])}
+
+novos_produtos = map(
+    mudo_preco_de_produto,
+    produtos
+)
 
 # mapeamento
 print_iter(produtos)
 print_iter(novos_produtos)
+# print(hasattr(novos_produtos, '__iter__'))
+# print(hasattr(novos_produtos, '__next__'))
+# print(isinstance(novos_produtos, GeneratorType))
