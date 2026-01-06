@@ -13,9 +13,13 @@ produtos = [
     {'nome': 'Produto 4', 'preco': 69.90},
 ]
 
+
+def aumentar_porcentagem(valor, porcentagem):
+    return round(valor * porcentagem, 2)
+
 # list comprehention
 novos_produtos = [
-    {**produto, 'preco': 123} for produto in produtos
+    {**produto, 'preco': aumentar_porcentagem(produto['preco'], 1.1)} for produto in produtos
 ]
 
 # mapeamento
