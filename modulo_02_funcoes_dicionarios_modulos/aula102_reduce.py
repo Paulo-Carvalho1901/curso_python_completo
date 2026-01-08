@@ -11,8 +11,15 @@ produtos = [
     {'nome': 'Produto 4', 'preco': 69.90},
 ]
 
-total = 0
-for p in produtos:
-    total += p['preco']
 
-print(total)
+
+
+# função acumuladora
+
+# total = 0
+# for p in produtos:
+#     total += p['preco']
+
+# print(total)
+
+print(sum([p['preco'] for p in produtos]))
